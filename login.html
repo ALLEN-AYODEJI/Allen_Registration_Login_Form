@@ -1,0 +1,82 @@
+<!---- Register Login form created by Ayodeji
+Allen----->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Allen-Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="account-page">
+      <div class="form-box"> 
+
+        <!--Toggle button-->
+        <div class="button-box">
+          <div id="btn"></div>
+
+          <button type="button" onclick="login()" class="toggle-btn">
+          Log In</button> 
+
+          <button type="button" onclick="register()" class="toggle-btn">
+            Register</button> 
+        </div>
+
+        <!--Form for Log in-->
+        <form id="login" class="input-group-login">
+          <input type="text" class="input-field"
+          placeholder="Email ID" required>
+          <input type="password" class="input-field"
+          placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box">
+          <span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in  
+          </button>
+        </form>
+
+        <!--Form for Register-->
+        <form id="register" class="input-group-register">
+          <input type="text" class="input-field"
+          placeholder="First Name" required>
+          <input type="text" class="input-field"
+          placeholder="Last Name" required>
+          <input type="email" class="input-field"
+          placeholder="Email Id" required>
+          <input type="password" class="input-field"
+          placeholder="Enter Password" required>
+          <input type="text" class="input-field"
+          placeholder="Confirm Password" required>
+          <input type="checkbox" class="check-box">
+          <span>I agree to the terms and conditions</span>
+          <button type="submit" class="submit-btn">Register  
+          </button>
+        </form>
+      </div>
+    </div>
+
+  <!--Javascript for transtioning
+  from login to register-->
+  <script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+
+    function register() {
+  x.style.left = '-400px';
+  y.style.left = '50px';
+  z.style.left = '110px';
+  }
+
+  function login() {
+    x.style.left = '50px';
+    y.style.left = '400px';
+    z.style.left = '0px';
+  }
+
+  </script>
+</body>
+
+
+
+</html>
